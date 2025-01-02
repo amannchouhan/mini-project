@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+   
+</head>
+<body>
+   <div class="container">
+    <h1 class="tile"> Freelancer Project </h1>
+    <form action="/submit" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br>  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br> 
+        <label for="cname">Country</label>
+        <input type="Text" id="cname" name="cname" placeholder="Your Country Name">
+        <br>
+        <label for="Course">Course/Degree:</label>
+        <input type="text" id="Course" name="Course" placeholder="Enter your Course" required>
+        <br>   
+        <label for="skills">Skills:</label>
+            <fieldset>
+                <legend>Core Languages</legend>
+                <label><input type="checkbox" name="skills[]" value="HTML"> HTML</label><br>
+                <label><input type="checkbox" name="skills[]" value="CSS"> CSS</label><br>
+                <label><input type="checkbox" name="skills[]" value="JavaScript"> JavaScript</label><br>
+                <label><input type="checkbox" name="skills[]" value="Python"> Python</label><br>
+                <label><input type="checkbox" name="skills[]" value="Java"> Java</label><br>
+                <label><input type="checkbox" name="skills[]" value="C#"> C#</label><br>
+                <label><input type="checkbox" name="skills[]" value="C++"> C++</label><br>
+                <label><input type="checkbox" name="skills[]" value="Ruby"> Ruby</label><br>
+                <label><input type="checkbox" name="skills[]" value="PHP"> PHP</label><br>
+                <label><input type="checkbox" name="skills[]" value="Swift"> Swift</label><br>
+                <label><input type="checkbox" name="skills[]" value="Kotlin"> Kotlin</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>APIs and Frameworks</legend>
+                <label><input type="checkbox" name="skills[]" value="React"> React</label><br>
+                <label><input type="checkbox" name="skills[]" value="Angular"> Angular</label><br>
+                <label><input type="checkbox" name="skills[]" value="Vue.js"> Vue.js</label><br>
+                <label><input type="checkbox" name="skills[]" value="Django"> Django</label><br>
+                <label><input type="checkbox" name="skills[]" value="Flask"> Flask</label><br>
+                <label><input type="checkbox" name="skills[]" value="Node.js"> Node.js</label><br>
+                <label><input type="checkbox" name="skills[]" value="Spring Boot"> Spring Boot</label><br>
+                <label><input type="checkbox" name="skills[]" value="Laravel"> Laravel</label><br>
+                <label><input type="checkbox" name="skills[]" value="Express.js"> Express.js</label><br>
+                <label><input type="checkbox" name="skills[]" value="ASP.NET"> ASP.NET</label><br>
+                <label><input type="checkbox" name="skills[]" value="TensorFlow"> TensorFlow</label><br>
+                <label><input type="checkbox" name="skills[]" value="Keras"> Keras</label><br>
+            </fieldset>
+        <br>  
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" placeholder="Enter years of experience" required>
+        <br>  
+        <label for="Dob">Date of Birth</label>
+        <input type="date" id="Dob" name="Dob" placeholder="DD-MM-YYYY" required max="2005-01-01">
+        <br>
+        <label for="project-type">Project Type:</label>
+        <select id="project-type" name="project-type" required>
+            <optgroup label="Development">
+                <option value="web-development">Web Development</option>
+                <option value="mobile-app-development">Mobile App Development</option>
+                <option value="game-development">Game Development</option>
+                <option value="desktop-software">Desktop Software</option>
+                <option value="embedded-systems">Embedded Systems</option>
+            </optgroup>
+            <optgroup label="Design">
+                <option value="ui-ux-design">UI/UX Design</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="interaction-design">Interaction Design</option>
+            </optgroup>
+            <optgroup label="Data & Analytics">
+                <option value="data-science">Data Science</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="big-data">Big Data</option>
+            </optgroup>
+            <optgroup label="DevOps & Security">
+                <option value="devops">DevOps</option>
+                <option value="cloud-computing">Cloud Computing</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="site-reliability-engineering">Site Reliability Engineering</option>
+            </optgroup>
+            <optgroup label="Specialized Fields">
+                <option value="ai-development">AI Development</option>
+                <option value="blockchain-development">Blockchain Development</option>
+                <option value="ar-vr-development">AR/VR Development</option>
+                <option value="iot-development">IoT Development</option>
+                <option value="robotics">Robotics</option>
+            </optgroup>
+            <optgroup label="Testing & QA">
+                <option value="manual-testing">Manual Testing</option>
+                <option value="automated-testing">Automated Testing</option>
+                <option value="performance-testing">Performance Testing</option>
+                <option value="security-testing">Security Testing</option>
+            </optgroup>
+            <optgroup label="Other">
+                <option value="technical-writing">Technical Writing</option>
+                <option value="research-and-development">Research and Development</option>
+                <option value="consultancy">Consultancy</option>
+                <option value="other">Other</option>
+            </optgroup>
+        </select>
+         <br>
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="Link to your portfolio">
+         <br>
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" >
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+   </div>
+</body>
+</html>

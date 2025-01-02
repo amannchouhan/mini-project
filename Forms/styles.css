@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background gradient */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+
+/* Container Styling */
+.container {
+   
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+h1.tile {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+/* Label and Input Styling */
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #fff;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="url"], select, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;  
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+select {
+    background-color: #fff;
+    color: #333;
+}
+
+/*Button styling*/
+button[type="submit"], button[type="reset"] {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+    background-color: #feb47b;
+}
+
+/* Fieldset Styling */
+fieldset {
+   
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 2px solid #fff;
+   
+    
+}
+
+legend {
+    font-size: 1.2rem;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+/* Checkbox Styling */
+fieldset label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Form Elements Spacing */
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    h1.tile {
+        font-size: 2rem;
+    }
+}
+br {
+    margin-bottom: 15px;
+}
